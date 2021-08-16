@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 300px;
+  grid-template-areas: 'a a' 'a a';
+  /* border: solid 2px red; */
+}
+
+.grid-item {
+  text-align: center;
+  grid-area: a;
+  justify-self: center;
+  align-self: center;
+  /* Used borders to see my styling changes */
+  /* border: solid 2px red; */
+}
+
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.modal-container {
+  /* This way it could be display flex or grid or whatever also. */
+  display: block;
+
+  /* Probably need media queries here */
+  width: 1000px;
+  max-width: 100%;
+
+  height: 800px;
+  max-height: 100%;
+
+  position: fixed;
+
+  z-index: 100;
+
+  left: 50%;
+  top: 50%;
+
+  border-radius: 25px;
+
+  padding: 20px;
+
+  /* Use this for centering if unknown width/height */
+  transform: translate(-50%, -50%);
+
+  /* If known, negative margins are probably better (less chance of blurry text). */
+  /* margin: -200px 0 0 -200px; */
+
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
