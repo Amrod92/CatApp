@@ -57,6 +57,8 @@
 }
 
 .cat-stars-item2 {
+  margin-left: 20px;
+  margin-top: 5px;
   grid-area: b;
   /* border: solid 2px red; */
 }

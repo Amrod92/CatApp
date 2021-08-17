@@ -6,6 +6,8 @@ import CatStats from '../UI/CatStats';
 import WikipediaLogo from '../../img/wikipedia_logo.png';
 import VcaLogo from '../../img/vca_logo.png';
 import VetStreetLogo from '../../img/vet_street_logo.jpg';
+import { FiAlertTriangle } from 'react-icons/fi';
+
 import './CatBreed.css';
 
 function CatBreed({ match }) {
@@ -44,9 +46,18 @@ function CatBreed({ match }) {
                 <Flag code={breed.breeds[0].country_code} height={16} />{' '}
                 {breed.breeds[0].origin}
               </span>
-              <span className='badge bg-secondary fs-5'>
+
+              <span
+                className='badge bg-secondary fs-5'
+                style={{ marginRight: '5px' }}
+              >
                 {breed.breeds[0].weight.imperial} kg
               </span>
+              {breed.breeds[0].hypoallergenic ? (
+                <span className='badge bg-secondary fs-5'>
+                  Hypoallergenic <FiAlertTriangle style={{ color: 'yellow' }} />
+                </span>
+              ) : null}
             </div>
             <hr />
             {/* Cat Stats in display with stars */}
@@ -68,6 +79,10 @@ function CatBreed({ match }) {
                   title='Dog Friendly'
                   rating={breed.breeds[0].dog_friendly}
                 />
+                <CatStats
+                  title='Health Issues'
+                  rating={breed.breeds[0].health_issues}
+                />
               </div>
               <div className='cat-stars-item2'>
                 <CatStats
@@ -86,13 +101,19 @@ function CatBreed({ match }) {
                   title='Intelligence Level'
                   rating={breed.breeds[0].intelligence}
                 />
+                <CatStats
+                  title='Adaptability Level'
+                  rating={breed.breeds[0].adaptability}
+                />
               </div>
             </div>
             <br />
-
+            <h3>Note: </h3>
+            <p>{breed.breeds[0].temperament}</p>
             <h2>
               For more information about the{' '}
-              {breed.breeds[0].name.toLowerCase()} breed, use the image below.
+              {breed.breeds[0].name.toLowerCase()} breed, click on the image
+              below.
             </h2>
             <div>
               <a
