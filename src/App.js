@@ -8,6 +8,7 @@ import BreedList from './components/Cat/BreedList';
 import CatBreed from './components/Cat/CatBreed';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Modal from 'react-modal';
 Modal.setAppElement('#root');
 

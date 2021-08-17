@@ -4,6 +4,7 @@ import Loading from '../UI/Loading';
 import { Link } from 'react-router-dom';
 import Flag from 'react-world-flags';
 import './BreedList.css';
+import Pagination from 'react-bootstrap/Pagination';
 
 function BreedList() {
   const API_BREEDS = 'https://api.thecatapi.com/v1/breeds';
@@ -36,6 +37,7 @@ function BreedList() {
         className='form-control'
         style={{ backgroundColor: '#eff1e4' }}
       />
+      <Pagination></Pagination>
       <div className='breed-counter'>
         {/* I NEED TO FIX THIS */}
         There are currently {breeds.length} cat breed matches
@@ -69,7 +71,7 @@ function BreedList() {
               </Link>
             ))
         ) : (
-          <Loading />
+          <Loading className='d-flex align-items-center justify-content-center' />
         )}
       </div>
     </div>

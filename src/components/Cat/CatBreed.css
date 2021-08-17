@@ -6,9 +6,10 @@
   padding: 20px;
 }
 
-img {
+.cat-image {
   max-width: 400px;
   max-height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .stars {
@@ -16,16 +17,7 @@ img {
   position: relative !important;
 }
 
-.card {
-  background: #eff1e4;
-  border: none;
-}
-
-.card-body {
-  border-top: red !important;
-}
-
-.single-breed-header {
+.cat-breed-header {
   text-align: left;
   text-transform: uppercase;
   font-weight: 800;
@@ -34,6 +26,7 @@ img {
 .cat-stats {
   text-align: left;
   font-size: 20px;
+  border-radius: 5px;
 }
 
 .origin {
@@ -49,9 +42,16 @@ img {
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 'a a b b';
+  background-color: coral;
+  color: gray;
+  text-shadow: 0.2px 0.2px black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 .cat-stars-item {
+  margin-left: 20px;
+  margin-top: 5px;
   grid-area: a;
   /* border: solid 2px red; */
 }

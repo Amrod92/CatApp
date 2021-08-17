@@ -35,6 +35,15 @@
   text-align: center;
 }
 
+.loading-logo {
+  width: 70px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 /* heading for number of cats matched */
 
 .breed-counter {
@@ -55,12 +64,4 @@
   .breed-counter {
     font-size: 1.2rem;
   }
-}
-
-.loading-list {
-  align-content: center;
-}
-
-Loading {
-  align-content: center;
 }

@@ -3,6 +3,9 @@ import axios from 'axios';
 import Flag from 'react-world-flags';
 import Loading from '../UI/Loading';
 import CatStats from '../UI/CatStats';
+import WikipediaLogo from '../../img/wikipedia_logo.png';
+import VcaLogo from '../../img/vca_logo.png';
+import VetStreetLogo from '../../img/vet_street_logo.jpg';
 import './CatBreed.css';
 
 function CatBreed({ match }) {
@@ -29,16 +32,19 @@ function CatBreed({ match }) {
       <div className='breed-info'>
         {loading ? (
           <>
-            <h1>{breed.breeds[0].name}</h1>
+            <h1 className='cat-breed-header'>{breed.breeds[0].name}</h1>
             <img src={breed.url} className='cat-image' alt='' />
             <p>{breed.breeds[0].description}</p>
-            <div className='badges'>
+            <div className='badge'>
               {/* Location Flag  */}
-              <span className='badge badge-primary'>
+              <span
+                className='badge bg-secondary fs-5'
+                style={{ marginRight: '5px' }}
+              >
                 <Flag code={breed.breeds[0].country_code} height={16} />{' '}
                 {breed.breeds[0].origin}
               </span>
-              <span className='badge badge-secondary origin'>
+              <span className='badge bg-secondary fs-5'>
                 {breed.breeds[0].weight.imperial} kg
               </span>
             </div>
@@ -81,6 +87,47 @@ function CatBreed({ match }) {
                   rating={breed.breeds[0].intelligence}
                 />
               </div>
+            </div>
+            <br />
+
+            <h2>
+              For more information about the{' '}
+              {breed.breeds[0].name.toLowerCase()} breed, use the image below.
+            </h2>
+            <div>
+              <a
+                href={breed.breeds[0].wikipedia_url}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  alt='Wikipedia'
+                  src={WikipediaLogo}
+                  style={{ height: '80px', width: '80px', padding: '5px' }}
+                />
+              </a>
+              <a
+                href={breed.breeds[0].vcahospitals_url}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  alt='Vca'
+                  src={VcaLogo}
+                  style={{ height: '80px', width: '150px', padding: '5px' }}
+                />
+              </a>
+              <a
+                href={breed.breeds[0].vetstreet_url}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  alt='VetStreet'
+                  src={VetStreetLogo}
+                  style={{ height: '80px', width: '150px', padding: '5px' }}
+                />
+              </a>
             </div>
           </>
         ) : (
