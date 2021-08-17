@@ -14,7 +14,12 @@ export default class NavbarComp extends Component {
               width='40'
               height='40'
               className='d-inline-block align-top'
-              style={{ marginLeft: '50px', marginTop: '5px' }}
+              style={{
+                marginLeft: '50px',
+                marginTop: '-8px',
+                justifyContent: 'center',
+                alignContent: 'center'
+              }}
             />{' '}
             CatFinder
           </Navbar.Brand>

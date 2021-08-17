@@ -36,7 +36,7 @@ function CatBreed({ match }) {
           <>
             <h1 className='cat-breed-header'>{breed.breeds[0].name}</h1>
             <img src={breed.url} className='cat-image' alt='' />
-            <p>{breed.breeds[0].description}</p>
+            <p style={{ marginTop: '18px' }}>{breed.breeds[0].description}</p>
             <div className='badge'>
               {/* Location Flag  */}
               <span

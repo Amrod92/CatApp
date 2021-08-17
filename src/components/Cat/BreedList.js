@@ -4,7 +4,6 @@ import Loading from '../UI/Loading';
 import { Link } from 'react-router-dom';
 import Flag from 'react-world-flags';
 import './BreedList.css';
-import Pagination from 'react-bootstrap/Pagination';
 
 function BreedList() {
   const API_BREEDS = 'https://api.thecatapi.com/v1/breeds';
@@ -37,9 +36,8 @@ function BreedList() {
         className='form-control'
         style={{ backgroundColor: '#eff1e4' }}
       />
-      <Pagination></Pagination>
       <div className='breed-counter'>
-        {/* I NEED TO FIX THIS */}
+        {/* I NEED TO FIX THIS OR REMOVE IT */}
         There are currently {breeds.length} cat breed matches
       </div>
       <hr style={{ border: 'solid 1px #537c8e' }} />

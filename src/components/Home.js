@@ -7,11 +7,11 @@ import './Home.css';
 function Home() {
   const headings = [
     "Cats choose us; we don't own them - Kristin Cast",
-    'Cat got your tongue!',
-    'You’re purrrrr-ty.',
-    'Did someone say catnip?!',
-    'Keep calm and purr on',
-    'Be PAWsitive.'
+    'Cat got your tongue?',
+    'Let the Cat Out of the Bag',
+    'Not Enough Room to Swing a Cat',
+    'A Cat In Gloves Catches No Mice',
+    'A Cat Nap'
   ];
 
   const randomHeading = headings[Math.floor(Math.random() * headings.length)];
