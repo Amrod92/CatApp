@@ -25,7 +25,9 @@ PhotoBook
 To run this project use the following command:
 
 ```bash
-  npm start
+  1 - npm install
+  
+  2 - npm start
 ```
 
 This GitHub project comes with the CAT-API key. If you would like to use yours, go to the ".env" file and change the "REACT_APP_API_KEY"
