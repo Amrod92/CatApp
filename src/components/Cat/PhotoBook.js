@@ -11,6 +11,10 @@ function PhotoBook() {
   const [photoBook, setPhotoBook] = useState([]);
   const [loading, setLoading] = useState(false);
   const photoBookAPI = `https://api.thecatapi.com/v1/images/search?limit=${incrementLimit}`;
+  
+   {
+    /* THE FOLLOWING HOOK GETS THE AXIOS REPSOSES FROM THE FETCHIMAGE ARROW FUNCTION */
+  }
 
   useEffect(() => {
     fetchImage();
@@ -40,12 +44,14 @@ function PhotoBook() {
 
         {loading ? (
           <>
+    {/* WHEN SCROLLDOWN THIS WILL REFRESH THE WEBPAGE */}
             <InfiniteScroll
               dataLength={photoBook.length}
               next={fetchImage}
               hasMore={true}
               loader={<Loading />}
             >
+                {/* NORMAL DIV AND IMG TO DISPLAY THE CAT */}
               <div className='image-wrapper'>
                 {photoBook.map(catImage => (
                   <img
