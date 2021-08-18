@@ -15,6 +15,9 @@ function CatBreed({ match }) {
   const [breed, setBreed] = useState({});
   const [loading, setLoading] = useState(false);
 
+    {
+    /* THE FOLLOWING HOOK GETS THE AXIOS REPSOSES */
+  }
   useEffect(() => {
     const fetchBreed = async () => {
       axios
@@ -38,7 +41,8 @@ function CatBreed({ match }) {
             <img src={breed.url} className='cat-image' alt='' />
             <p style={{ marginTop: '18px' }}>{breed.breeds[0].description}</p>
             <div className='badge'>
-              {/* Location Flag  */}
+                            {/* THIS IS TO DISPLAY THE FLAG, KG AND HYPOALLERGENIC INFORMATIONS  */}
+
               <span
                 className='badge bg-secondary fs-5'
                 style={{ marginRight: '5px' }}
@@ -60,7 +64,7 @@ function CatBreed({ match }) {
               ) : null}
             </div>
             <hr />
-            {/* Cat Stats in display with stars */}
+            {/* DISPLAY THE CATS STATS WITH THE CATSTATS COMPONENT */}
             <div className='cat-stars-grid'>
               <div className='cat-stars-item'>
                 <CatStats
