@@ -34,7 +34,8 @@ function PhotoBook() {
       <div className='breed-info'>
         <div className='drop-down-cat'></div>
         <h3>
-          Here picstures of random cute cats! Scroll to auto-refresh the content
+          Here picstures of random cute cats! Scroll to auto-refresh the
+          content.
         </h3>
 
         {loading ? (
