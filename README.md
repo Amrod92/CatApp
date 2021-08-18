@@ -8,16 +8,17 @@ As part of the ClearBank coding test, I created this website to demonstrate my s
 
 The application is reachable online using the following link: [CatFinder](https://clearbankcatapp.herokuapp.com/). Please be aware that as this application use the Heroku free plan, the cold boot can be around 10-15 seconds at worst.
 
-Home
+
 ![Home Screenshot](https://i.ibb.co/HVTbGmS/home-page.png)
-Modal Kitty
+Home
 ![Modal Screenshot](https://i.ibb.co/tKVFt3t/modal-kitty.png)
-Breeds List
+Modal Kitty
 ![BreedsList Screenshot](https://i.ibb.co/1ZxFd4G/catList.png)
-Breed Information
+Breeds List
 ![BreedInfo Screenshot](https://i.ibb.co/PN1nTcf/catInfo.png)
-PhotoBook
+Breed Information
 ![CatBook Screenshot](https://i.ibb.co/126Lsm5/photo-Book.png)
+PhotoBook
 
 ## Run Application 🛠
 
