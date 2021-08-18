@@ -5,6 +5,9 @@ import RandomCat from '../components/Cat/RandomCat';
 import './Home.css';
 
 function Home() {
+  {
+    /* RANDOM PHRASES THAT UPDATES THE SCREEN EVERYTIME THE USER REFRESH THE PAGE */
+  }
   const headings = [
     "Cats choose us; we don't own them - Kristin Cast",
     'Cat got your tongue?',
@@ -34,6 +37,7 @@ function Home() {
             </p>
             <p>Use the below button to open your random cat of the day </p>
             <br />
+              {/* THIS WILL OPEN A MODAL FOR THE CAT OF THE DAY */}
             <Button variant='warning' onClick={() => setModalIsOpen(true)}>
               Open Cat
             </Button>
