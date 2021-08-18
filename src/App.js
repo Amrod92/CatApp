@@ -21,9 +21,13 @@ class App extends Component {
           <Navbar />
           <div className='content'>
             <Switch>
+              {/* Homepage route */}
               <Route path='/' exact component={Home} />
+              {/* BreedList route */}
               <Route path='/breeds' exact component={BreedList} />
+              {/* CatBreed route */}
               <Route path='/breeds/:id' component={CatBreed} />
+              {/* Photobook route */}
               <Route path='/photobook' component={PhotoBook} />
               {/* 404 route */}
               <Route component={PageNotFound} />
