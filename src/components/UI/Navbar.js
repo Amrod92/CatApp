@@ -6,6 +6,7 @@ export default class NavbarComp extends Component {
   render() {
     return (
       <div>
+      {/* NAVBAR */}
         <Navbar bg='light' variant='light' expand='lg'>
           <Navbar.Brand href='/'>
             <img
