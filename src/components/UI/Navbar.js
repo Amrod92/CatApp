@@ -32,7 +32,7 @@ export default class NavbarComp extends Component {
             >
               <Nav.Link href='/'>Home</Nav.Link>
               <Nav.Link href='/breeds'>Breeds</Nav.Link>
-              <Nav.Link href='/category'>Category</Nav.Link>
+              <Nav.Link href='/photobook'>PhotoBook</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -10,7 +10,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Modal from 'react-modal';
-import CatCategory from './components/Cat/CatCategory';
+import PhotoBook from './components/Cat/PhotoBook';
 Modal.setAppElement('#root');
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
               <Route path='/' exact component={Home} />
               <Route path='/breeds' exact component={BreedList} />
               <Route path='/breeds/:id' component={CatBreed} />
-              <Route path='/category' component={CatCategory} />
+              <Route path='/photobook' component={PhotoBook} />
               {/* 404 route */}
               <Route component={PageNotFound} />
             </Switch>

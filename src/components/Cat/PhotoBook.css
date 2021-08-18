@@ -1,0 +1,18 @@
+.image-wrapper {
+  float: left;
+}
+
+.image-category {
+  max-width: 350px;
+  border-radius: 25px;
+  margin: 4rem auto;
+  padding: 5px;
+}
+
+.drop-down-cat {
+  float: left;
+  max-width: 350px;
+  border-radius: 25px;
+  margin: 4rem auto;
+  padding: 5px;
+}
