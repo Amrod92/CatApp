@@ -1,6 +1,6 @@
-# CatFinder Website for ClearBank ✨
+# CatFinder Website ✨
 
-As part of the ClearBank coding test, I created this website to demonstrate my skills using Rect.JS, React Routing, Bootstrap, HTML, CSS and JavaScript.
+I created this website to demonstrate my skills using Rect.JS, React Routing, Bootstrap, HTML, CSS and JavaScript.
 
 ![Logo](https://clearbankcatapp.herokuapp.com/static/media/logoN.dd1eda42.svg)
 
